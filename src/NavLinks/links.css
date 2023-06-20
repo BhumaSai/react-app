@@ -1,0 +1,289 @@
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kaushan+Script&family=Pacifico&display=swap');
+
+
+.projects-container{
+    min-height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.p-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.projects{
+    width: 380px;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    background: #00ffc89c;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: .5rem;
+    text-align: center;
+    align-items: center;
+}
+.projects img{
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 2rem;
+}
+.projects h1{
+    font-size: 2rem;
+    color: #000000;
+    text-transform: capitalize;
+    text-align: center;
+}
+.projects a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #29adff;
+    background: #000;
+    width: 75px;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 7px; 
+    font-weight: 900;
+}
+.projects a:hover{
+    background: #0000004d;
+    color: #f0f6ff;
+    font-weight: 900;
+}
+.pl{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+center{
+    text-decoration: underline;
+    animation: header .5s linear;
+}
+@media screen and (max-width:1000px){
+    .p-items{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+/* projects styles end */
+
+/* Home section start */
+
+.hero-section{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hero-container{
+    width: 50%;
+    min-height:50vh;
+}
+.hero-content{
+    width: 100%;
+    background: linear-gradient(to bottom,#00ffbf,#fff);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    border-radius: 2rem;
+    border: 2px solid #000000;
+}
+.hero-content h2{
+    font-size: 4rem;
+    font-family:'Kaushan Script', cursive ;
+    animation: anime .5s linear;
+}
+@keyframes anime {
+    0%{
+        transform: translatex(-300px);
+    }
+    100%{
+        transform: translatex(0);
+    }
+}
+.hero-content p{
+    font-size: 2rem;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: slideRight .5s linear;
+}
+@keyframes slideRight {
+    0%{
+        transform: translatex(300px);
+    }
+    100%{
+        transform: translatex(0);
+    }
+}
+.hero-content p span{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(0, 162, 255);
+}
+.hero-container .project-det{
+    min-height: 300px;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.project-det h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.project-det a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #000000;
+    background: #0bc7d1bc;
+    padding: 4px 6px;
+    border-radius: .5rem;
+    font-weight: 600;
+}
+.project-det a:hover{
+    background:#0bc7d16f ;
+    border: 2px solid black;
+}
+@media screen and (max-width:1000px) {
+    .hero-container{
+        width: 90%;
+    }
+    .hero-content h2{
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: 1.5rem;
+    }
+    .hero-content p span{
+        font-size: 2rem;
+    }
+}
+/* Home section end */
+
+/* about section start */
+
+.about-section{
+    min-height: 60vh;
+    width: 100%;
+    padding: 2rem;
+}
+.about-section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    animation:header .5s linear
+}
+.about-det{
+    display: flex;
+    justify-content: center;
+}
+.about-text{
+    padding: 1rem .5rem;
+    list-style-type: circle;
+    position: relative;
+}
+.about-text li{
+    list-style: none;
+    width: 100%;
+    list-style-type: lower-alpha;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.about-text li::before{
+    content: '»';
+    position: absolute;
+    left: 0;
+}
+
+
+/* about section end */
+
+/* contact section start */
+
+.contact-section{
+    min-height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.contact{
+    height: 500px;
+    width: 30%;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 3px 3px #fff f;
+    background: #00ffbf4f;
+    border-radius: 1rem;
+}
+.contact h1{
+    text-transform: capitalize;
+    font-weight: 800;
+    text-decoration: underline;
+    animation:header .5s linear;
+}
+@keyframes header {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.form{
+    width: 100%;
+    padding: 2rem 0;
+}
+.form input{
+    height: 40px;
+    width: 100%;
+    margin: .5rem 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 3px ;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.form textarea{
+    width: 100%;
+    height: 95px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 4px;
+}
+.contact button{
+    font-size: 1rem;
+    background: #000;
+    border-radius: 5px;
+    color: aqua;
+    padding: 4px;
+    text-transform: capitalize;
+    border: 1px solid aqua;
+}
+.contact button:hover{
+    background: #27adeb42;
+}
+.form input:nth-child(2){
+    text-transform: lowercase;
+}
+@media screen and (max-width:800px) {
+    .contact{
+        width: 60%;
+    }
+}
+/* contact section end */
