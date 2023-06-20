@@ -5,7 +5,7 @@ function Project() {
   return (
     <>
     <Nav />
-    <center><h1>projects</h1></center>
+    <center><h1>projects page</h1></center>
     </>
   )
 }
