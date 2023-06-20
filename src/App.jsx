@@ -9,8 +9,9 @@ import Contact from './Links/Contact';
 function App() {
   return (
     <>
-    <Routes>
+    <Routes basename="/">
       <Route path='/' element={<Home />} />
+      <Route path='/react-app' element={<Home />} />
       <Route path='/project' element={<Project />} />
       <Route path='/contact' element={<Contact />} />
     </Routes>
